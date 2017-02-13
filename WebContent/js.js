@@ -7,4 +7,6 @@ function js(){
 	
 		alert("sfsd");
 		alert("sfsd");
+		alert("sfsd");
+		alert("sfsd");
 }
