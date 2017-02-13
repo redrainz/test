@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+ function person(id,name){
+	 this.id=id;
+	this.name=name;
+	this.to=function(){
+		return id+name;
+	} 
+ }
+ 
+ function person1(id,name){
+	 var persons=new Object;
+	 persons.id=id;
+	 persons.name=name;
+	 persons.to=function(){
+		 return id+name;
+	 }
+	 return persons;
+ }
+ 
+function qy(form){
+	var yu=document.getElementById("name");
+	var zh=new person1(1,"aaa");
+	var yu=zh.id;
+	var yu2=zh.name;
+	alert(zh.to()+" "+form.elements[1].value);
+	
+}
+
+function load(){
+	window.open("ajax01.html","name");
+	
+}
+</script>
+</head>
+<body>
+<a href="file:///C:/1.html">as</a>
+<form>
+<input type="text" id="name" onblur="alert('thank you');"
+onchange="alert('good');" >
+<input type="button"  value="sda"onclick="qy(this.form)">
+</form>
+
+</body>
+<iframe src="a.html" width="20%" height="50%">
+dsfsd
+</iframe>
+</html>
